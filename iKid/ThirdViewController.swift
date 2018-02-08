@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ThirdViewController.swift
 //  iKid
 //
 //  Created by Connor Hawthorne on 2/6/18.
@@ -8,24 +8,24 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         Question.text = question
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBOutlet weak var Question: UILabel!
     @IBOutlet weak var Next: UIButton!
     
-    let question = "What was the second movie about the database engineer called?"
-    let punchLine = "The SQL!"
+    let question = "How do you make a water bed more bouncy?"
+    let punchLine = "Use spring water!"
     var questionView = false
     
     @IBAction func nextButtonTouched(_ sender: Any) {
